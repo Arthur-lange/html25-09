@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html2509</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .menu__list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .menu__item {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .menu__link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu__link:hover {
+            text-decoration: underline;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 80%;
+            max-width: 600px;
+            animation: pulse 2s infinite;
+            position: relative;
+            z-index: 2;
+        }
+
+        .lights {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle, rgba(255, 255, 0, 0.5), rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0) 70%);
+            z-index: 1;
+            opacity: 0.5; /* Ajuste a opacidade conforme desejado */
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes shimmer {
+            0% { opacity: 0.5; }
+            50% { opacity: 0.7; }
+            100% { opacity: 0.5; }
+        }
+
+        h1 {
+            text-shadow: 4px 4px 8px rgba(255, 0, 0, 0.5) 
+        }
+
+        p {
+            text-shadow: 2px 2px 4px rgba(161, 1, 1, 0.5)
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__item menu__item--active"><a href="#" class="menu__link">home</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">sobre</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">contato</a></li>
+        </ul>
+    </nav>
+    <h1>carro</h1>
+    <div class="image-container">
+        <div class="lights"></div>
+        <img src="https://img.freepik.com/fotos-gratis/conducao-de-automoveis-modernos-na-cidade_23-2151674222.jpg" alt="imagem de carro">
+    </div>
+    <p>tipo de carro
+        <a href="https://img.freepik.com/fotos-gratis/conducao-de-automoveis-modernos-na-cidade_23-2151674222.jpg" style="color: lightblue;">
+            clique aqui</a>
+    </p>
+</body>
+</html>
